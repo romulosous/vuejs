@@ -35,5 +35,12 @@ export default defineComponent({
       this.count = 0;
     },
   },
+  watch: {
+    //colocar a propriedade como si fosse um metodo
+    count(newValue, oldValue) {
+      console.log(oldValue);
+      console.log(newValue);
+    },
+  },
 });
 </script>
